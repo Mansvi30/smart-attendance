@@ -1,0 +1,10 @@
+numpy
+opencv-python
+Pillow
+flask
+imutils
+# Optional / fallback libraries:
+face_recognition
+dlib
+# If you have a TFLite runtime on your Pi, install it instead of full TF:
+# tflite-runtime

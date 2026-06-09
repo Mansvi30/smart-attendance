@@ -1,0 +1,14 @@
+[Unit]
+Description=Raspi Smart Attendance
+After=network.target
+
+[Service]
+# Adjust WorkingDirectory to where you clone the repo on your Pi
+WorkingDirectory=/home/pi/smart-attendance
+ExecStart=/home/pi/smart-attendance/scripts/run_attendance.sh
+User=pi
+Restart=always
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
